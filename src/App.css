@@ -1,1 +1,251 @@
+/* ── Base ─────────────────────────────────────────── */
+body {
+  background-color: #6b7280;
+  min-height: 100vh;
+}
 
+/* ── Navy tokens ──────────────────────────────────── */
+.bg-navy        { background-color: #0a1f44 !important; }
+.bg-navy-light  { background-color: #122b5e !important; }
+.border-navy    { border-color: #0a1f44 !important; }
+.text-navy      { color: #0a1f44 !important; }
+
+/* ── Green tokens ─────────────────────────────────── */
+.bg-green-dark  { background-color: #1a3d2b !important; }
+.bg-green-mid   { background-color: #245c3b !important; }
+.border-green   { border-color: #1a3d2b !important; }
+.text-green     { color: #1a3d2b !important; }
+
+/* ── Navbar ───────────────────────────────────────── */
+.navbar-lm {
+  background-color: #0a1f44;
+  border-bottom: 3px solid #1a3d2b;
+}
+
+.navbar-lm .navbar-brand {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.04em;
+}
+
+.navbar-lm .nav-link {
+  color: rgba(255,255,255,0.75) !important;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.15s;
+}
+
+.navbar-lm .nav-link:hover,
+.navbar-lm .nav-link.active {
+  color: #fff !important;
+}
+
+.navbar-lm .navbar-toggler {
+  border-color: rgba(255,255,255,0.3);
+}
+
+/* ── Hero ─────────────────────────────────────────── */
+.hero {
+  background: linear-gradient(135deg, #0a1f44 0%, #122b5e 50%, #1a3d2b 100%);
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-badge {
+  display: inline-block;
+  background-color: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.25);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.85rem;
+  border-radius: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: #fff;
+}
+
+.hero p {
+  color: rgba(255,255,255,0.75);
+  font-size: 1.05rem;
+  max-width: 520px;
+}
+
+.hero .btn-hero-primary {
+  background-color: #1a3d2b;
+  border-color: #1a3d2b;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.65rem 1.75rem;
+  border-radius: 0.4rem;
+  transition: background-color 0.2s;
+}
+
+.hero .btn-hero-primary:hover {
+  background-color: #245c3b;
+  border-color: #245c3b;
+}
+
+.hero .btn-hero-outline {
+  border: 2px solid rgba(255,255,255,0.4);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.65rem 1.75rem;
+  border-radius: 0.4rem;
+  background: transparent;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.hero .btn-hero-outline:hover {
+  border-color: #fff;
+  background-color: rgba(255,255,255,0.08);
+}
+
+/* ── Stat cards on hero ───────────────────────────── */
+.stat-card {
+  background-color: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 0.6rem;
+  padding: 1.25rem 1rem;
+  text-align: center;
+  color: #fff;
+}
+
+.stat-card .stat-number {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.stat-card .stat-label {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ── Feature cards ────────────────────────────────── */
+.feature-section {
+  background-color: #f8f9fa;
+  padding: 5rem 0;
+}
+
+.feature-card {
+  border: none;
+  border-top: 4px solid #0a1f44;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+/* ── Form card (navy) ─────────────────────────────── */
+.form-card {
+  max-width: 480px;
+  width: 100%;
+}
+
+.form-card .card-header {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.form-card .form-control:focus {
+  border-color: #0a1f44;
+  box-shadow: 0 0 0 0.2rem rgba(10, 31, 68, 0.2);
+}
+
+.btn-navy {
+  background-color: #0a1f44;
+  border-color: #0a1f44;
+  color: #fff;
+}
+
+.btn-navy:hover  { background-color: #122b5e; border-color: #122b5e; color: #fff; }
+.btn-navy:disabled { background-color: #0a1f44; opacity: 0.65; color: #fff; }
+
+/* ── Form card (green) ────────────────────────────── */
+.form-card-green .card-header {
+  background-color: #1a3d2b !important;
+}
+
+.form-card-green .form-control:focus {
+  border-color: #1a3d2b;
+  box-shadow: 0 0 0 0.2rem rgba(26, 61, 43, 0.2);
+}
+
+.btn-green {
+  background-color: #1a3d2b;
+  border-color: #1a3d2b;
+  color: #fff;
+}
+
+.btn-green:hover   { background-color: #245c3b; border-color: #245c3b; color: #fff; }
+.btn-green:disabled { background-color: #1a3d2b; opacity: 0.65; color: #fff; }
+
+/* ── Table card headers ───────────────────────────── */
+.table-card-navy .card-header  { background-color: #0a1f44 !important; }
+.table-card-green .card-header { background-color: #1a3d2b !important; }
+
+/* ── Route Details panel ──────────────────────────── */
+.route-details-header {
+  background: linear-gradient(90deg, #0a1f44 0%, #1a3d2b 100%);
+}
+
+.route-details-footer {
+  background-color: #0a1f44;
+}
+
+.route-row:hover td {
+  background-color: rgba(10, 31, 68, 0.06) !important;
+}
+
+/* ── Package count badge ──────────────────────────── */
+.badge-pkg {
+  background-color: #1a3d2b;
+  color: #fff;
+}
+
+/* ── Form select focus (green) ────────────────────── */
+.form-card-green .form-select:focus {
+  border-color: #1a3d2b;
+  box-shadow: 0 0 0 0.2rem rgba(26, 61, 43, 0.2);
+}
+
+/* ── Outline action buttons ───────────────────────── */
+.btn-outline-navy {
+  color: #0a1f44;
+  border-color: #0a1f44;
+  background: transparent;
+}
+.btn-outline-navy:hover {
+  background-color: #0a1f44;
+  color: #fff;
+}
+
+.btn-outline-green {
+  color: #1a3d2b;
+  border-color: #1a3d2b;
+  background: transparent;
+}
+.btn-outline-green:hover {
+  background-color: #1a3d2b;
+  color: #fff;
+}
