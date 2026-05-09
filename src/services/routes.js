@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:5000";
+import BASE_URL from "../config";
 
 export async function getRoutes() {
   const res = await fetch(`${BASE_URL}/routes`);
